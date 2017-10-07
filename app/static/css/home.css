@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "CabritoDidone";
+	src: url("CABRITODIDONE.TTF");
+}
+
+.onesbsi {
+	font-family: "CabritoDidone";
+}
+
+.slideshow li {
+	list-style: none;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.slide img {
+	position: relative;
+
+	top: 5%;
+	max-width: 100%;
+	height: auto;
+	border-radius: 2%;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+#logo {
+	position: relative;
+	left: 13%;
+	max-width: 75%;
+	height: auto;
+}
+
+.jumbotron {
+	min-height: 30%;
+
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.jumbotron a {
+	position: relative;
+	padding: 10px;
+	
+}
+
+.caption h3 {
+	text-align: center;
+}

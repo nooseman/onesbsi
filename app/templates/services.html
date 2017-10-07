@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+	</head>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
+			<div class="jumbotron">
+				<h2><span class="onesbsi">ONESBSI</span> offers a wide variety of building maintenance services.</h2>
+				<br>
+				<p>If you find think any of the items on this list might be helpful in keeping your place of business clean, please <a href="{{ url_for('contact') }}">send us an email.</span></p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">	
+			<div class="panel panel-default">
+				<table class="table table-striped text-center">
+					<tr>
+						<td>Commercial building and facilities cleaning services</td>
+					</tr>
+					<tr>
+						<td>Day porter customized scheduling and services</td>
+					</tr>
+					<tr>
+						<td>Facility plumbing services and repairs</td>
+					</tr>
+					<tr>
+						<td>Facility electrical services and repairs</td>
+					</tr>
+					<tr>
+						<td>Landscaping service</td>
+					</tr>
+					<tr>
+						<td>Carpet installation and cleaning</td>
+					</tr>
+					<tr>
+						<td>Roofing services</td>
+					</tr>
+					<tr>
+						<td>Window washing</td>
+					</tr>
+					<tr>
+						<td>Pressure washing</td>
+					</tr>
+					<tr>
+						<td>Hard surface (marble, stone, vinyl) maintenance and polishing</td>
+					</tr>
+					<tr>
+						<td>Interior and exterior painting</td>
+					</tr>
+					<tr>
+						<td>Emergency clean-up</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

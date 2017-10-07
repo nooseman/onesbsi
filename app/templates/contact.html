@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+{% block content %}
+
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+	</head>
+
+	<h1 style="padding-left: 20px;">Contact Us</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<div class="jumbotron">
+						<h1 class="city">San Francisco</h1>	
+						<div class="body">
+							<div class="phone number">
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+								{% if contactinfo %}
+								{{ contactinfo["sanfrancisco"]["phone"] }}
+								{% else %}
+								(415) 710-0762
+								{% endif %}
+							</div>
+							<div class="email">
+								<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+								{% if contactinfo %}
+								{{ contactinfo["sanfrancisco"]["email"] }}
+								{% else %}
+								philipb@onesbsi.com
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-6">
+					<div class="jumbotron">
+						<h1 class="city">Santa Clara</h1>
+						<div class="body">
+							<div class="phone number">
+								<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+								{% if contactinfo %}
+								{{ contactinfo["santa clara"]["phone"] }}
+								{% else %}
+								(408) 655-4671
+								{% endif %}
+							</div>
+							<div class="email">
+								<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+								{% if contactinfo %}
+								{{ contactinfo["santa clara"]["email"] }}
+								{% else %}
+								philipb@onesbsi.com
+								{% endif %}
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="jumbotron">
+				<h2 class="text-center">Send us an email to receive a Free Quote!</h2>
+
+				{% call macros.render_form(emailform, action_text='Request Quote',
+											btn_class='btn btn-success') %}
+
+				<p>Your Email</p>
+					{{ macros.render_field(emailform.email, label_visible=false,
+											placeholder='Your email') }}
+
+				<p>Your Situation</p>
+					{{ macros.render_field(emailform.body, label_visible=false,
+											placeholder='What we need to know to help you best') }}
+
+				{% endcall %}
+
+			</div>
+		</div>
+{% endblock %}

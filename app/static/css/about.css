@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "CabritoDidone";
+    src: url("CABRITODIDONE.TTF");
+}
+
+.cabrito {
+    font-family: "CabritoDidone";
+}
+
+.top {
+    font-size: 5em !important;
+}
+
+.motto {
+    font-size: 2em !important;
+    padding-top
+}
+
+.onesbsi {
+    font-size: 4em !important;
+}
+
+.jumbotron {
+    padding: 20px;
+}
+
+.text {
+    padding-left: 45px;
+    vertical-align: middle;
+}
+
+blockquote {
+    border:none;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    margin-left:-20px;
+    margin-bottom:-30px;
+    quotes: "\201C""\201D""\2018""\2019";
+}

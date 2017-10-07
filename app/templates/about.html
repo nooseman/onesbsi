@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+	</head>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1>About Us</h1>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <blockquote><p>"One Company - One Solution"</p></blockquote>
+                </div>
+            </div>
+
+            <hr>
+            <p>
+                <span class="cabrito">ONESBSI</span> is a proactive and dependable building service company serving the greater Bay Area. Our reputation is built on consistency, communication, and customer satisfaction.
+            </p>
+            <br>
+            <p>
+                We build relationships by addressing customers' needs through question-and-answer.
+            </p>
+            <br>
+            <p>
+                We know that customers always have other choices for building services which is why we pride ourselves in the quality and consistency of our service. We act as the customer's eyes and ears in case anything goes wrong.
+            </p>
+            <br>
+            <p>
+                Our employees know that consistency in service and tailored solutions lead to customer satisfaction and loyalty.
+            </p>
+
+        </div>
+    </div>
+
+{% endblock %}
